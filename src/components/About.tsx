@@ -29,23 +29,14 @@ export default function About() {
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
-          className="relative aspect-[4/5] bg-gray-100 overflow-hidden"
+          className="relative aspect-[4/5] overflow-hidden flex items-center justify-center p-12 rounded-[2.5rem]"
         >
           <img 
-            src="https://picsum.photos/seed/designer-profile/800/1000" 
+            src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1000&auto=format&fit=crop" 
             alt="Designer Profile" 
-            className="w-full h-full object-cover filter grayscale hover:grayscale-0 transition-all duration-700"
+            className="w-full h-full object-cover shadow-2xl rounded-[3rem]"
             referrerPolicy="no-referrer"
           />
-          <div className="absolute bottom-10 -left-10 bg-black text-white p-8 max-w-xs shadow-2xl skew-y-3">
-            <h3 className="font-display text-2xl font-bold mb-2">EXPERTISE</h3>
-            <ul className="text-xs tracking-widest leading-loose opacity-70">
-              <li>• AIGC WORKFLOW OPTIMIZATION</li>
-              <li>• DOMESTIC E-COMMERCE VISUALS</li>
-              <li>• CROSS-BORDER UI/UX ADAPTATION</li>
-              <li>• BRAND STORYTELLING</li>
-            </ul>
-          </div>
         </motion.div>
       </div>
     </section>

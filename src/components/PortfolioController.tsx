@@ -11,11 +11,11 @@ import { ArrowRight } from 'lucide-react';
 
 export default function PortfolioController() {
   const [activeCategory, setActiveCategory] = useState<Category>('aigc');
-  const [activeSubCategory, setActiveSubCategory] = useState<AIGCSubCategory | 'all'>('all');
+  const [activeSubCategory, setActiveSubCategory] = useState<AIGCSubCategory>('models');
 
   const filteredProjects = PROJECTS.filter(p => {
     if (p.category !== activeCategory) return false;
-    if (activeCategory === 'aigc' && activeSubCategory !== 'all' && p.subCategory !== activeSubCategory) return false;
+    if (activeCategory === 'aigc' && p.subCategory !== activeSubCategory) return false;
     return true;
   });
 
@@ -36,7 +36,9 @@ export default function PortfolioController() {
                 key={cat.id}
                 onClick={() => {
                   setActiveCategory(cat.id as Category);
-                  setActiveSubCategory('all');
+                  if (cat.id === 'aigc') {
+                    setActiveSubCategory('models');
+                  }
                 }}
                 className={`group relative p-10 text-left transition-all duration-500 rounded-xl overflow-hidden ${
                   activeCategory === cat.id 
@@ -133,20 +135,6 @@ export default function PortfolioController() {
                     className="w-full h-full object-cover"
                     referrerPolicy="no-referrer"
                   />
-                  
-                  {/* Glassmorphism Badge */}
-                  <div className="absolute top-5 right-5 bg-white/40 backdrop-blur-xl border border-white/40 px-3 py-1.5 text-[10px] font-bold rounded-lg uppercase tracking-tighter text-black shadow-sm">
-                    {String(idx + 1).padStart(2, '0')}
-                  </div>
-
-                  {/* Corner Label */}
-                  <div className="absolute bottom-6 left-6 flex flex-col gap-2 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
-                    {project.tags.map(tag => (
-                      <span key={tag} className="w-fit bg-black text-white px-3 py-1.5 text-[9px] font-bold tracking-widest uppercase rounded-sm translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-500" style={{ transitionDelay: '100ms' }}>
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
                 </div>
 
                 <div className="flex justify-between items-start px-2">

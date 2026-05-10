@@ -76,7 +76,7 @@ export const PROJECTS: Project[] = [
     description: '训练专用微调模型，复刻90年代港风摄影质感。',
     category: 'aigc',
     subCategory: 'models',
-    image: 'https://images.unsplash.com/photo-1542044896530-05d85be9b11a?q=80&w=800&auto=format&fit=crop',
+    image: '/src/assets/images/regenerated_image_1778404574703.png',
     tags: ['Vintage', 'Film', 'Photography']
   },
   {
@@ -103,7 +103,7 @@ export const PROJECTS: Project[] = [
     description: '针对Z世代受众的潮酷风格生成，探索数字时尚新玩法。',
     category: 'aigc',
     subCategory: 'models',
-    image: 'https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?q=80&w=800&auto=format&fit=crop',
+    image: '/src/assets/images/regenerated_image_1778404578592.png',
     tags: ['Streetwear', 'Fashion', 'Youth']
   },
   {
@@ -121,7 +121,7 @@ export const PROJECTS: Project[] = [
     description: '基于3D扫描与AI渲染的数字化服饰穿戴效果，支持实时交互感。',
     category: 'aigc',
     subCategory: 'models',
-    image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=800&auto=format&fit=crop',
+    image: '/src/assets/images/regenerated_image_1778404582403.png',
     tags: ['Digital Twin', 'Tech', 'Rending']
   },
   {
@@ -139,7 +139,7 @@ export const PROJECTS: Project[] = [
     description: '复刻安迪沃霍尔风格的色彩溢出感，极具视觉冲击力的平面素材。',
     category: 'aigc',
     subCategory: 'models',
-    image: 'https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?q=80&w=800&auto=format&fit=crop',
+    image: '/src/assets/images/regenerated_image_1778404562904.png',
     tags: ['Pop Art', 'Color', 'Graphic']
   },
   {
@@ -157,7 +157,7 @@ export const PROJECTS: Project[] = [
     description: '追求极致皮肤纹理与顶级面孔比例的AI人像实验室成果。',
     category: 'aigc',
     subCategory: 'models',
-    image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=800&auto=format&fit=crop',
+    image: '/src/assets/images/regenerated_image_1778404566827.png',
     tags: ['High-end', 'Portrait', 'Texture']
   },
   {
@@ -166,7 +166,7 @@ export const PROJECTS: Project[] = [
     description: '融合数字艺术与科幻元素的模特展示，极具未来主义色彩。',
     category: 'aigc',
     subCategory: 'models',
-    image: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=800&auto=format&fit=crop',
+    image: '/src/assets/images/regenerated_image_1778404570868.png',
     tags: ['Sci-fi', 'Virtual', 'Art']
   },
   {
